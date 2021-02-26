@@ -1,3 +1,8 @@
+body
+{
+  font-family: "Ubuntu";
+}
+
 #page
 {
   background-color: #ebecf0;
@@ -11,10 +16,12 @@
 
 .fh
 {
-  font-family: 'Montserrat', sans-serif;
+
   line-height: 1.5;
   font-size: 3rem;
+  font-family: "Montserrat";
 }
+
 
 .cat
 {
@@ -37,6 +44,11 @@ hr.rounded {
 .col-sm-6
 {
   margin-bottom: 30px;
+}
+
+.navbar-brand
+{
+  font-size: 5rem;
 }
 
 .hovereffect {
