@@ -3,6 +3,10 @@ body
   font-family: "Ubuntu";
 }
 
+p{
+  font-family:"Montserrat";
+}
+
 #page
 {
   background-color: #ebecf0;
