@@ -197,10 +197,26 @@ text-align: center;
 .login
 {
   margin-left:10px;
-  padding-right: 1rem;
+
 }
 
 
   .btn {
     margin: 0 0.5rem 1rem;
   }
+
+  .fleet{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+  }
+.fleet img
+{
+  margin: 0% 2% 0% 2%;
+}
+
+.specs
+{
+  text-align: center;
+}
