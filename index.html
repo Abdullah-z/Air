@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
-  <link type="text/css" rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,7 +19,6 @@
 
 <body>
   <section id="page">
-
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,18 +32,70 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <li class="nav-item">
-            <a class="nav-link" href=""><i class="fas fa-plane"></i> Destinations</a>
+            <a class="nav-link" href="dest.html"><i class="fas fa-globe-americas"></i> Destinations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=""><i class="fas fa-box"></i> Cargo</a>
+            <a class="nav-link" href="cargo.html"><i class="fas fa-box"></i> Cargo</a>
           </li>
 
+          <li class="nav-item"></li>
+<a class="nav-link" href="fleet.html"><i class="fas fa-plane"></i> Fleet
+</a>
           <li class="nav-item">
             <a class="nav-link" href="airport.html"><i class="far fa-compass"></i> Airport</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="login.html"><i class="fas fa-user-alt"></i> Log In</a>
+            <a class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user-alt"></i> Log In</a>
+            <div class="container">
+
+
+
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
           </li>
       </ul>
       </div>
@@ -54,7 +105,8 @@
 
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <h1 class="fh">Connecting World.</h1>
+          <h1 class="fh"><b>Connecting World.</b></h1>
+          <h3 class="fh">From Washington to 7 Continents</h3>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
           <img src="sky.png" alt="skyline" height="100%" width="100%">
@@ -74,8 +126,31 @@
             <a href=""><img src="https://cdn.odysseytraveller.com/app/uploads/2020/03/Bari-scaled.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a data-toggle="modal" data-target="#myModal">
                   <H2>BARI</H2>
+                  <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="card modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">BARI</h4>
+
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+<b>Direct Flight</b> <br>
+        IAD-TER-BRI <br>
+        11h 32min
+      </div>
+
+      <!-- Modal footer -->
+
+
+    </div>
+  </div>
+</div>
                 </a>
               </p>
             </div>
@@ -87,7 +162,7 @@
             <a href=""><img src="https://www.planetware.com/wpimages/2019/06/czech-republic-prague-itineraries-for-travelers-one-day-itinerary-old-town-square.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>PRAGUE</H2>
                 </a>
               </p>
@@ -99,7 +174,7 @@
             <a href=""><img src="https://static.vecteezy.com/system/resources/previews/001/309/597/non_2x/nagoya-castle-with-skyline-in-japan-free-photo.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>NAGOYA</H2>
                 </a>
               </p>
@@ -110,10 +185,9 @@
         <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="hovereffect">
             <a href=""><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F07%2F17%2Fsan-diego-california-SDWKNDS0720.jpg" height="100%" width="100%"></a>
-            <p>SAN DIEGO</p>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>SAN DIEGO</H2>
                 </a>
               </p>
@@ -132,7 +206,7 @@
             <a href=""><img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>LONDON</H2>
                 </a>
               </p>
@@ -145,7 +219,7 @@
             <a href=""><img src="https://api-abroad.sfo2.cdn.digitaloceanspaces.com/images/_1200x675_crop_center-center_82_line/france-paris-tour-eiffel-77676271.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>PARIS</H2>
                 </a>
               </p>
@@ -158,7 +232,7 @@
             <a href=""><img src="https://www.damachotelsandresorts.com/getmedia/12089d08-fdd4-4115-bfa4-689eda595c18/Palm-Jumeirah.jpg.aspx?width=1920&height=1260&ext=.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>DUBAI</H2>
                 </a>
               </p>
@@ -171,7 +245,7 @@
             <a href=""><img src="https://lp-cms-production.imgix.net/2019-06/65830387.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>SYDNEY</H2>
                 </a>
               </p>
@@ -185,7 +259,7 @@
             <a href=""><img src="https://www.traveldailymedia.com/assets/2019/12/moscow-cathedral.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>MOSCOW</H2>
                 </a>
               </p>
@@ -198,7 +272,7 @@
             <a href=""><img src="https://i.hurimg.com/i/hdn/75/0x0/5ab0ff9ad3806d12540aada2.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>ISTANBUL</H2>
                 </a>
               </p>
@@ -210,7 +284,7 @@
             <a href=""><img src="https://www.gotokyo.org/en/plan/tokyo-outline/images/main.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>TOKYO</H2>
                 </a>
               </p>
@@ -222,7 +296,7 @@
             <a href=""><img src="https://www.andbeyond.com/wp-content/uploads/sites/5/cape-town-aerial-view-greenpoint-stadium.jpg" height="100%" width="100%"></a>
             <div class="overlay">
               <p>
-                <a href="#">
+                <a>
                   <H2>CAPETOWN</H2>
                 </a>
               </p>
@@ -232,92 +306,7 @@
       </div>
 
 
-      <!-- </div>
 
-    <section id="features">
-      <br>
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
-
-    </section> -->
-
-
-      <!-- Testimonials -->
-      <!--
-    <section id="testimonials">
-
-      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-      <img src="images/dog-img.jpg" alt="dog-profile">
-      <em>Pebbles, New York</em> -->
-
-      <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
-
-      <!-- </section> -->
-
-
-      <!-- Press -->
-
-      <!-- <section id="press">
-      <img src="images/techcrunch.png" alt="tc-logo">
-      <img src="images/tnw.png" alt="tnw-logo">
-      <img src="images/bizinsider.png" alt="biz-insider-logo">
-      <img src="images/mashable.png" alt="mashable-logo">
-
-    </section> -->
-
-
-      <!-- Pricing -->
-
-      <!-- <section id="pricing">
-
-      <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
-
-
-      <h3>Chihuahua</h3>
-      <h2>Free</h2>
-      <p>5 Matches Per Day</p>
-      <p>10 Messages Per Day</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
-
-
-      <h3>Labrador</h3>
-      <h2>$49 / mo</h2>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
-
-
-      <h3>Mastiff</h3>
-      <h2>$99 / mo</h2>
-      <p>Pirority Listing</p>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
-
-    </section> -->
-
-
-      <!-- Call to Action -->
-
-      <!-- <section id="cta">
-
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
-
-    </section> -->
 
     </div>
     <!-- Footer -->
